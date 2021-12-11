@@ -1,26 +1,27 @@
+// HomepageBanner.js file
+
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { PrismicLink } from '@prismicio/react'
 
-import homeBanner from '../images/home-banner.jpg'
-
-export const HomepageBanner = () => (
+export const HomepageBanner = ({
+  title,
+  description,
+  linkUrl,
+  linkLabel,
+  backgroundUrl,
+}) => (
   <section
     className="homepage-banner"
     style={{
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(${homeBanner})`,
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(${backgroundUrl})`,
     }}
   >
     <div className="banner-content container">
-      <h2 className="banner-title">John Doe</h2>
-      <p className="banner-description">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
-        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-        Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede
-        asdf.
-      </p>
-      <Link to="/about" className="banner-button">
-        Learn More
-      </Link>
+      <h2 className="banner-title">{title}</h2>
+      <p className="banner-description">{description}</p>
+      <PrismicLink href={linkUrl} className="banner-button">
+        {linkLabel}
+      </PrismicLink>
     </div>
   </section>
 )

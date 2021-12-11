@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-index-js",
+    "path": "/",
+    "result": {"data":{"prismicHomepage":{"data":{"banner_title":{"text":"Genshin Weekly Battle Pass Experience Calculation"},"banner_description":{"text":"From two FOMOs to another! "},"banner_link":{"url":"/about","type":"page","uid":"about"},"banner_link_label":{"text":"What's Battle Pass? Go Play it Yo'Self!"},"banner_background":{"url":"https://images.prismic.io/ckunakom/d6c3196a-f532-4f24-9902-e3a309bbb95b_battlepass_tab.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&rect=0%2C0%2C1920%2C1080&w=2000&h=1125"}}}},"pageContext":{}},
+    "staticQueryHashes": ["2468095761"]}

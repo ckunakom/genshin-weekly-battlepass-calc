@@ -22,7 +22,7 @@ const About = () => (
       <section className="content-section text-section-2col">
         <h1>About Us</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+          cupcakes nutella, consectetuer adipiscing elit. Donec odio.
           Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
           Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
         </p>
