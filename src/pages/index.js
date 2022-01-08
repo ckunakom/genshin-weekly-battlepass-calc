@@ -2,11 +2,11 @@
 
 import * as React from 'react'
 import { graphql } from 'gatsby'
-
+import { SliceZone } from '@prismicio/react'
 import { Layout } from '../components/Layout'
 import { Seo } from '../components/Seo'
 import { HomepageBanner } from '../components/HomepageBanner'
-import { MainContent } from '../components/MainContent'
+import { components } from '../slices'
 
 const HomeTemplate = ({ data }) => {
   if (!data) return null
@@ -22,7 +22,7 @@ const HomeTemplate = ({ data }) => {
         linkLabel={doc.banner_link_label.text}
         backgroundUrl={doc.banner_background.url}
       />
-      <MainContent />
+      <SliceZone slices={doc.body} components={components} />
     </Layout>
   )
 }
@@ -47,6 +47,16 @@ export const query = graphql`
         }
         banner_background {
           url
+        }
+        body {
+          ... on PrismicSliceType {
+            slice_type
+          }
+          ...HomepageDataBodyText
+          ...HomepageDataBodyQuote
+          ...HomepageDataBodyFullWidthImage
+          ...HomepageDataBodyImageGallery
+          ...HomepageDataBodyImageHighlight
         }
       }
     }
