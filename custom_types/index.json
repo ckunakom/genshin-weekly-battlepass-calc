@@ -16,5 +16,13 @@
     "name": "Page",
     "repeatable": true,
     "value": "page.json"
+  },
+  {
+    "id": "card",
+    "name": "Card",
+    "repeatable": true,
+    "value": "card.json"
   }
 ]
+
+

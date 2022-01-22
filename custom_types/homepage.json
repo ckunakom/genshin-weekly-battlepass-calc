@@ -49,13 +49,7 @@
       "type": "Slices",
       "fieldset": "Slice zone",
       "config": {
-        "labels": {
-          "text": [],
-          "quote": [],
-          "full_width_image": [],
-          "image_gallery": [],
-          "image_highlight": []
-        },
+        "labels": null,
         "choices": {
           "text": {
             "type": "Slice",
@@ -67,7 +61,10 @@
               "columns": {
                 "type": "Select",
                 "config": {
-                  "options": ["1 Column", "2 Columns"],
+                  "options": [
+                    "1 Column",
+                    "2 Columns"
+                  ],
                   "default_value": "1 Column",
                   "label": "columns"
                 }
@@ -75,7 +72,7 @@
               "content": {
                 "type": "StructuredText",
                 "config": {
-                  "multi": "paragraph, heading2, heading3, strong, em, hyperlink",
+                  "multi": "paragraph,heading2,heading3,strong,em,hyperlink",
                   "allowTargetBlank": true,
                   "label": "content"
                 }
@@ -132,7 +129,7 @@
               "gallery_title": {
                 "type": "StructuredText",
                 "config": {
-                  "single": "heading2, heading3",
+                  "single": "heading2,heading3",
                   "label": "gallery_title"
                 }
               }
@@ -201,7 +198,7 @@
               "description": {
                 "type": "StructuredText",
                 "config": {
-                  "single": "heading3, strong, em",
+                  "single": "heading3,strong,em",
                   "label": "description"
                 }
               },
@@ -218,6 +215,27 @@
                   "single": "paragraph",
                   "label": "link_label",
                   "placeholder": "Optional link label"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "component": {
+            "type": "Slice",
+            "fieldset": "Component",
+            "description": "custom component trigger",
+            "icon": "crop_7_5",
+            "display": "list",
+            "non-repeat": {
+              "component": {
+                "type": "Select",
+                "config": {
+                  "options": [
+                    "cards"
+                  ],
+                  "default_value": "cards",
+                  "label": "component",
+                  "placeholder": "component"
                 }
               }
             },
