@@ -1,3 +1,3 @@
-import * as React from "react";
+// import * as React from "react";
 
-export const Component = () => "test";
+// export const Component = () => "test";
