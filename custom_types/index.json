@@ -19,9 +19,9 @@
   },
   {
     "id": "card",
-    "name": "Card",
+    "name": "Cards",
     "repeatable": true,
-    "value": "card.json"
+    "value": "cards.json"
   }
 ]
 

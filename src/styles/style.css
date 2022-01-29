@@ -302,3 +302,10 @@ footer a {
     float: none;
   }
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~ ADDED EXTRA CSS ~~~~~~~~~~~~~~~~~~~~~~ */
+.card {
+  margin-top: 20px;
+  box-shadow: 5px 5px 20px 0 rgba(107, 48, 202, 0.2);
+  padding: 20px;
+}

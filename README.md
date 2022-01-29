@@ -10,3 +10,8 @@ Buttons of stuff to help figure out if you can still complete the weekly battlep
 
 1/22/2022
 - Figure out query to get data in Card.js in slices
+
+1/29/2022
+- Update Card to Cards to be better at naming convention (where are we updating this...?)
+- Custom type (prismic): need to update Reapeatable to non-repeatable
+- JEEZSUZ the to-do list is getting longer and none of the previous tasks are done ... 😱😱😱

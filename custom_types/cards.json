@@ -1,0 +1,51 @@
+{
+  "Main" : {
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : {
+          "card" : [ {
+            "display" : "card",
+            "name" : "card"
+          } ]
+        },
+        "choices" : {
+          "card" : {
+            "type" : "Slice",
+            "fieldset" : "card",
+            "description" : "card",
+            "icon" : "credit_card",
+            "display" : "list",
+            "non-repeat" : {
+              "bp_xp" : {
+                "type" : "Number",
+                "config" : {
+                  "label" : "bp_xp",
+                  "placeholder" : "enter bp"
+                }
+              },
+              "frequency" : {
+                "type" : "Select",
+                "config" : {
+                  "options" : [ "Daily", "Weekly", "Period" ],
+                  "label" : "frequency",
+                  "placeholder" : "select frequency"
+                }
+              },
+              "description" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "heading4",
+                  "label" : "description",
+                  "placeholder" : "enter decription"
+                }
+              }
+            },
+            "repeat" : { }
+          }
+        }
+      }
+    }
+  }
+}
